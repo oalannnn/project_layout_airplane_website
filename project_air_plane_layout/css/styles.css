@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menu{display:flex;}
+nav.menu div.logo a{color:rgb(255, 102, 0);text-transform: bold;}
+.logo{padding:20px;font-size:20px;width:95%;}
+.lupa{padding:20px;font-size:20px;}
+section.fundo{background-image:url(/imagens/london.jpg);height:85vh;display:block;background-repeat: no-repeat, repeat;}
+div.geral{background-color:none;float:left;margin-top:10%;width:100%;}
+.opcoes-content{display:flex;background-color: black;width:50%;margin-left:25%;}
+a.a-items{flex-direction:row;color:white;width:100%;padding:14px;}
+a.a-items:hover{background-color:rgb(255, 102, 0);}
+.op{flex-direction:row;justify-content:center;width:20%;margin-left:40%;font-size: 15px;}
+div.caixa-content{background-color:none;display:flex;justify-content: center;}
+div.caixa-items{background-color:white;width:50%;}
+.pesquisa{padding:20px;font-size:20px}
+.at-media{display:none;}
+.caixa{display:flex;background-color:none;}
+.tabela-from{width:50%;margin-left:3%;padding-bottom:1%;}
+.pesquisa-content{padding:20px;background-color:blue;}
+#from{margin-left:3%;border-radius:5px;border-color:grey;border:0.5px solid grey;padding:15px;width:40%;}
+#at{border-radius:5px;border-color:grey;border:0.5px solid grey;padding:15px;width:40%;}
+#search{padding:15px;margin-bottom:3%;margin-left:3%;margin-top:20px;;font-size:15px;background-color:rgb(97, 97, 97);color:white;border:0.5px solid black;}
+#search:hover{background-color:rgb(255, 102, 0);}
+
+
+span.offers b{
+    padding:2px;
+}
+.offers{
+    display:flex;
+    font-size: 25px;
+    padding:10px;
+}
+.txt2-offers{
+    font-size:15px;
+}
+.grid-offers-content{
+    margin:20px;
+    margin-left:90px;
+    margin-bottom:-100px;
+}
+.grid-dad{
+    margin:100px;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    
+}
+.grid-conteudo{
+    position: relative;
+    overflow: hidden;
+    
+}
+.grid-conteudo .src{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.src{
+    transition:all .8s;
+}
+.src:hover{
+    transform:scale(1.1);
+}
+.leg{
+    color:white;
+    position: absolute;
+    background-color:none;
+    bottom:0;
+    left: 0;
+    padding:20px;
+    font-size:20px;
+}
+.h-1{
+    grid-row: span 1;
+}
+.h-2{
+    grid-row: span 2;
+}
+.w-1{
+    grid-column: span 1;
+}
+.w-2{
+    grid-column: span 2;
+}
+
+
+
+.grid-explore{
+    margin-top:40px;
+    font-size: 25px;
+}
+.explore-txt{
+    font-size:20px;
+}
+
+.grid-dad2{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.grid-conteudo2 .src2{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.leg-explore{
+    display:block;
+    background-color:rgba(211, 211, 211, 0.87);
+    width:100%;
+}
+.grid-conteudo2:nth-child(3){
+    margin-top:-20px;
+    padding-left:30px;
+    background-color:rgba(211, 211, 211, 0.87);
+}
+.grid-conteudo2:nth-child(4){
+    margin-top:-20px;
+    padding-left:30px;
+    background-color:rgba(211, 211, 211, 0.87);
+}
+.dad3{
+    padding-top:20px;
+}
+.son{
+    background-color:rgb(97, 97, 97);
+    padding:20px;
+    padding-top:40px;
+    padding-bottom:40px;
+    color:white;
+
+}
+
+#email{
+    border-radius:5px;
+    border-color:grey;
+    border:0.5px solid grey;
+    padding:10px;
+    width:100%;
+    font-size:15px;
+    color:rgba(128, 128, 128, 0.582);
+}
+#subscribe{padding:15px;font-size:15px;background-color:rgb(255, 102, 0);color:white;border:0.5px solid black;}
+#subscribe:hover{background-color:rgba(255, 102, 0, 0.548);}
+
+
+
+@media only screen and (max-width: 450px) {
+    div.geral{margin-top:0%;}
+    section.fundo{height:0vh;}
+    .opcoes-content{display:flex;margin-left:0%;width:100%;}
+    a.a-items{padding:10px;width:20%;}
+    .op{font-size:20px;padding:5px;}
+    div.caixa-items{width:100%;}
+    .caixa{margin-left:3%;}
+    .from #from{padding:200px;}
+    #from{width:90%;}
+    .at{margin-left:3%;}
+    #at{width:90%;}
+    .tabela-at{display:none;}
+    .tabela-from{font-size:20px;margin-left:0;}
+    .at-media{display:block;margin-left:3%;padding-bottom:5px;padding-top:5px;font-size:20px;}
+    div.button{margin-left:5%;margin-top:2.5%;}
+    #search{padding:15px;margin-left:-2%;font-size:15px;background-color:rgb(97, 97, 97);color:white;border:0.5px solid black;}
+    #search:hover{background-color:rgb(255, 102, 0);}
+
+    
+    .grid-offers-content{
+        margin:0;
+        width:100%;
+        background-color:rgb(231, 231, 231);
+    }
+    .grid-dad{
+        background-color:rgb(231, 231, 231);
+        width:100%;
+        margin:0;
+    }
+    .grid-container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        padding:15px;    
+    }
+    .h-1{
+        grid-row: span 1;
+    }
+    .h-2{
+        grid-row: span 1;
+    }
+    .w-1{
+        grid-column: span 1;
+    }
+    .w-2{
+        grid-column: span 1;
+    }
+    .grid-explore{
+        margin-top:40px;
+        font-size: 25px;
+        padding:15px;
+    }
+    .grid-dad2{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:100px;
+        padding:15px;
+    }
+    .dad3{
+        padding:15px;
+    }    
+
+}
